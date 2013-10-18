@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>Trimmer</h1>
-        <p>A Sublime Text plugin that removes trailing whitespace from the end of each line.</p>
+        <p>A Sublime Text plugin for cleaning up whitespace.</p>
 
         <p class="view"><a href="https://github.com/jonlabelle/Trimmer">View the Project on GitHub <small>jonlabelle/Trimmer</small></a></p>
 
@@ -31,91 +31,64 @@
         <h1>
 <a name="trimmer" class="anchor" href="#trimmer"><span class="octicon octicon-link"></span></a>Trimmer</h1>
 
-<p>A Sublime Text plugin that removes trailing whitespace from the end of each line. Trimmer is compatible with both Sublime Text 2 and 3.</p>
+<p>Trimmer is a <a href="http://www.sublimetext.com">Sublime Text</a> plug-in for cleaning up whitespace.</p>
 
-<p>Trimmer can also be used as alternative to the built-in setting, <code>trim_trailing_white_space_on_save</code>, for explicitly controlling when trimming is performed.</p>
+<ul>
+<li>Remove <strong>trailing</strong> whitespace</li>
+<li>Remove <strong>leading</strong> whitespace</li>
+<li>Remove <strong>leading</strong> and <strong>trailing</strong> whitespace</li>
+<li>Remove <strong>end-of-file</strong> whitespace</li>
+</ul><h2>
+<a name="compatibility" class="anchor" href="#compatibility"><span class="octicon octicon-link"></span></a>Compatibility</h2>
 
-<p>See the <a href="#usage">Usage</a> section for more information and additional features.</p>
+<p>Trimmer is compatible with both Sublime Text 2 and Sublime Text 3.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>As always, the recommended method for installation is via <a href="http://wbond.net/sublime_packages/package_control">Sublime Package Control</a>.</p>
-
-<p>Open the <code>Command Palette...</code> --&gt; <code>Package Control: Install Package</code> and search for <code>Trimmer</code>.</p>
-
-<h4>
-<a name="alternative-installation-methods" class="anchor" href="#alternative-installation-methods"><span class="octicon octicon-link"></span></a>Alternative installation methods</h4>
-
-<h5>
-<a name="install-using-git" class="anchor" href="#install-using-git"><span class="octicon octicon-link"></span></a>Install using Git</h5>
-
-<ol>
-<li>Locate your Sublime Text <code>Packages</code> directory by using the menu item <code>Preferences -&gt; Browse Packages...</code>.</li>
-<li>Run the following command from your <code>Packages</code> directory:
-
-<ul>
-<li><code>git clone https://github.com/jonlabelle/Trimmer "Trimmer"</code></li>
-</ul>
-</li>
-</ol><h5>
-<a name="manually-install" class="anchor" href="#manually-install"><span class="octicon octicon-link"></span></a>Manually install</h5>
-
-<ol>
-<li>
-<a href="https://github.com/jonlabelle/Trimmer/zipball/master">Download</a> the the zip.</li>
-<li>Copy the <em>Trimmer</em> folder to your Sublime Text <em>Packages</em> directory.
-
-<ul>
-<li>
-<strong>Mac</strong>: <code>~/Library/Application Support/Sublime Text [2,3]/Packages</code>
-</li>
-<li>
-<strong>Linux</strong>: <code>~/.Sublime Text [2,3]/Packages</code>
-</li>
-<li>
-<strong>Windows</strong>: <code>%APPDATA%/Sublime Text [2,3]/Packages</code>
-</li>
-</ul>
-</li>
-</ol><h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p><em>Trimmer's</em> default behavior is to remove trailing whitespace from the end of each line. See <a href="#optional-settings">Optional Settings</a> for additional trimming capabilities.</p>
+<a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h2>
 
 <h3>
-<a name="optional-settings" class="anchor" href="#optional-settings"><span class="octicon octicon-link"></span></a>Optional Settings</h3>
+<a name="package-install" class="anchor" href="#package-install"><span class="octicon octicon-link"></span></a>Package Install</h3>
 
-<p><strong>Trimmer Settings</strong></p>
+<p>If you're using <a href="http://wbond.net/sublime_packages/package_control">Sublime Package Control</a>...</p>
 
 <ul>
-<li>
-<code>Preferences</code> --&gt; <code>Package Settings</code> --&gt; <code>Trimmer</code> --&gt; <code>Settings - Default</code> | <code>Settings - User</code>
-</li>
-</ul><h4>
-<a name="trim-whitespace-from-end-of-file" class="anchor" href="#trim-whitespace-from-end-of-file"><span class="octicon octicon-link"></span></a>Trim whitespace from end-of-file</h4>
+<li>From <code>Tools</code> -&gt; <code>Command Palette...</code> -&gt; <code>Package Control: Install Package</code>, enter search term <strong><em>Trimmer</em></strong>.</li>
+</ul><h3>
+<a name="git-install" class="anchor" href="#git-install"><span class="octicon octicon-link"></span></a>Git Install</h3>
 
-<p>Removes all whitespace characters (including newlines), from the end of the document. The default value is <code>false</code>.</p>
+<p><code>cd</code> to your <strong>Packages</strong> directory, and clone the git repository.</p>
 
-<div class="highlight highlight-javascript"><pre><span class="s2">"trim_eof"</span><span class="o">:</span> <span class="kc">false</span> <span class="c1">// default</span>
+<div class="highlight highlight-sh"><pre><span class="c"># OSX</span>
+<span class="nb">cd</span> ~/Library/Application<span class="se">\ </span>Support/Sublime<span class="se">\ </span>Text<span class="se">\ </span>3/Packages/ <span class="o">&amp;&amp;</span>
+    git clone https://github.com/jonlabelle/Trimmer
+</pre></div>
+
+<h3>
+<a name="manual-install" class="anchor" href="#manual-install"><span class="octicon octicon-link"></span></a>Manual Install</h3>
+
+<p><a href="https://github.com/jonlabelle/Trimmer/zipball/master">Download</a> and extract the <a href="https://github.com/jonlabelle/Trimmer/zipball/master">zip</a> to your <strong>Packages</strong> directory.</p>
+
+<div class="highlight highlight-sh"><pre><span class="c"># OSX path</span>
+~/Library/Application Support/Sublime Text 2|3/Packages<span class="sb">`</span>
+
+<span class="c"># Linux path</span>
+~/.Sublime Text 2|3/Packages
+
+<span class="c"># Windows path</span>
+%APPDATA%/Sublime Text 2|3/Packages
 </pre></div>
 
 <blockquote>
-<p><strong>NOTE</strong>: This setting will adhere to the default <code>ensure_newline_at_eof_on_save</code> setting, and leave a single end-of-file newline character if specified.</p>
+<p><strong>NOTE:</strong> be sure to replace <code>2|3</code> with the appropriate version of your install.</p>
 </blockquote>
 
-<h4>
-<a name="save-after-trim" class="anchor" href="#save-after-trim"><span class="octicon octicon-link"></span></a>Save after Trim</h4>
-
-<p>Saves the current document/buffer immediately after trimming is performed. The default value is <code>false</code>.</p>
-
-<div class="highlight highlight-javascript"><pre><span class="s2">"save_after_trim"</span><span class="o">:</span> <span class="kc">false</span> <span class="c1">// default</span>
-</pre></div>
-
-<p><del>Ensure you're not overriding the <em>Default</em> Sublime Text 2 setting, <code>trim_trailing_white_space_on_save</code> (which is set to <code>false</code>) in your <em>User</em> settings. Otherwise, you're just duplicating it's behavior.</del></p>
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <h3>
-<a name="key-bindings" class="anchor" href="#key-bindings"><span class="octicon octicon-link"></span></a>Key Bindings</h3>
+<a name="default-key-binding" class="anchor" href="#default-key-binding"><span class="octicon octicon-link"></span></a>Default Key Binding</h3>
+
+<p>The default key binding will only remove <strong><em>trailing whitespace</em></strong>.</p>
 
 <ul>
 <li>
@@ -127,17 +100,32 @@
 <li>
 <strong>Windows</strong>: <code>Ctrl + Alt + S</code>
 </li>
-</ul><h3>
-<a name="sublime-text-command" class="anchor" href="#sublime-text-command"><span class="octicon octicon-link"></span></a>Sublime Text Command</h3>
+</ul><p>Additional trimming commands can be accessed from...</p>
 
 <ul>
-<li><code>trimmer</code></li>
-</ul><p>Description: Removes trailing whitespace from the end of each line.</p>
+<li>
+<code>Command Palette...</code>, prefix <code>Trimmer: ...</code>
+</li>
+<li>or <code>Edit</code> -&gt; <code>Line</code> -&gt; <code>Remove ... whitespace</code>
+</li>
+</ul><h4>
+<a name="sublime-text-command-names" class="anchor" href="#sublime-text-command-names"><span class="octicon octicon-link"></span></a>Sublime Text Command Names</h4>
 
-<h2>
+<ul>
+<li>
+<code>trimmer</code>: remove <strong>trailing</strong> whitespace</li>
+<li>
+<code>trim_leading</code>: remove <strong>leading</strong> whitespace</li>
+<li>
+<code>trim_leading_trailing</code>: remove <strong>leading</strong> and <strong>trailing</strong> whitespace</li>
+<li>
+<code>trim_eof</code>: remove <strong>end-of-file</strong> whitespace</li>
+</ul><h2>
 <a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
 
-<p><a href="http://jonlabelle.com">Jon LaBelle</a></p>
+<ul>
+<li><a href="http://jonlabelle.com/">Jon LaBelle</a></li>
+</ul>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/jonlabelle">jonlabelle</a></p>
