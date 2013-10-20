@@ -34,12 +34,9 @@
 <p>Trimmer is a <a href="http://www.sublimetext.com">Sublime Text</a> plug-in for cleaning up whitespace.</p>
 
 <ul>
-<li>Remove <strong>trailing</strong> whitespace.</li>
-<li>Remove <strong>leading</strong> whitespace.</li>
-<li>Remove <strong>leading</strong> and <strong>trailing</strong> whitespace.</li>
-<li>Remove whitespace at the <strong>top</strong> of the file.</li>
-<li>Remove whitespace at the <strong>end</strong> of the file.</li>
-<li>Remove <strong>empty</strong> lines.</li>
+<li>Trim whitespace at the end of each line.</li>
+<li>Trim whitespace at the start of each line.</li>
+<li>Delete empty, whitespace only lines.</li>
 </ul><h2>
 <a name="compatibility" class="anchor" href="#compatibility"><span class="octicon octicon-link"></span></a>Compatibility</h2>
 
@@ -91,7 +88,7 @@
 <h3>
 <a name="default-key-binding" class="anchor" href="#default-key-binding"><span class="octicon octicon-link"></span></a>Default Key Binding</h3>
 
-<p>The <em>default</em> key binding will remove <strong>trailing whitespace</strong> from each line.</p>
+<p>The <em>default</em> key binding will trim trailing whitespace from the end of each of line, in current view.</p>
 
 <ul>
 <li>
@@ -106,54 +103,32 @@
 </ul><h3>
 <a name="running-commands" class="anchor" href="#running-commands"><span class="octicon octicon-link"></span></a>Running Commands</h3>
 
-<p>All commands can be accessed from the <strong>Command Palette</strong>, or using the <strong>Main Menu</strong>.</p>
+<p>All commands are accessible from the <strong>Command Palette</strong>, prefix <code>Trimmer: ...</code>.</p>
 
-<ul>
-<li>
-<strong>Command Palette</strong>: prefix, <code>Trimmer: ...</code>
-</li>
-<li>
-<strong>Main Menu</strong>: <code>Edit</code> -&gt; <code>Line</code> -&gt; <code>Remove ... whitespace</code>
-</li>
-</ul><h3>
+<h3>
 <a name="sublime-text-commands" class="anchor" href="#sublime-text-commands"><span class="octicon octicon-link"></span></a>Sublime Text Commands</h3>
 
 <table>
 <thead><tr>
 <th>command</th>
 <th>description</th>
-<th>context</th>
+<th>scope</th>
 </tr></thead>
 <tbody>
 <tr>
 <td><code>trimmer</code></td>
-<td>remove <strong>trailing</strong> whitespace</td>
-<td>file/buffer</td>
+<td>trim whitespace at the end of each line</td>
+<td>entire file</td>
 </tr>
 <tr>
-<td><code>trim_left</code></td>
-<td>remove <strong>leading</strong> whitespace</td>
-<td>file/buffer, selection</td>
+<td><code>trim_leading_whitespace</code></td>
+<td>trim whitespace at the start of each line</td>
+<td>line selection, or entire file</td>
 </tr>
 <tr>
-<td><code>trim_both</code></td>
-<td>remove <strong>leading</strong> and <strong>trailing</strong> whitespace</td>
-<td>file/buffer</td>
-</tr>
-<tr>
-<td><code>trim_top</code></td>
-<td>remove whitespace at the <strong>top</strong> of the file</td>
-<td>file/buffer</td>
-</tr>
-<tr>
-<td><code>trim_bottom</code></td>
-<td>remove whitespace at the <strong>end</strong> of the file</td>
-<td>file/buffer</td>
-</tr>
-<tr>
-<td><code>trim_empty</code></td>
-<td>remove <strong>empty</strong> lines</td>
-<td>file/buffer, selection</td>
+<td><code>delete_empty_lines</code></td>
+<td>deletes empty, whitespace only lines</td>
+<td>line selection, or entire file</td>
 </tr>
 </tbody>
 </table><h2>
