@@ -4,30 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Trimmer by jonlabelle</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jonlabelle/Trimmer">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/jonlabelle/Trimmer/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/jonlabelle/Trimmer/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>Trimmer</h1>
-        <p>A Sublime Text plug-in for cleaning up whitespace.</p>
 
-        <p class="view"><a href="https://github.com/jonlabelle/Trimmer">View the Project on GitHub <small>jonlabelle/Trimmer</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/jonlabelle/Trimmer/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/jonlabelle/Trimmer/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/jonlabelle/Trimmer">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>Trimmer</h1>
+          <p>A Sublime Text plug-in for cleaning up whitespace.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jonlabelle">jonlabelle</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <h1>
 <a name="trimmer" class="anchor" href="#trimmer"><span class="octicon octicon-link"></span></a>Trimmer</h1>
 
@@ -38,14 +48,14 @@
 <li>Trim whitespace at the start of each line.</li>
 <li>Trim whitespace at the start and end of each line.</li>
 <li>Delete empty, whitespace only lines.</li>
-</ul><p>Watch a <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_demo.gif">Quick Demo</a></p>
+</ul><p>Watch a <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_demo.gif"><strong>Quick Demo</strong></a></p>
 
 <p><img src="https://raw.github.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_cmd_palette.png" alt="ScreenShot"></p>
 
 <h2>
 <a name="compatibility" class="anchor" href="#compatibility"><span class="octicon octicon-link"></span></a>Compatibility</h2>
 
-<p>Trimmer is compatible with both Sublime Text 2 and Sublime Text 3, on all OS platforms (OS X, Windows and Linux).</p>
+<p>Trimmer is compatible with Sublime Text 2 and 3, on all OS platforms (OS X, Windows and Linux).</p>
 
 <h2>
 <a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h2>
@@ -53,33 +63,23 @@
 <h3>
 <a name="package-control" class="anchor" href="#package-control"><span class="octicon octicon-link"></span></a>Package Control</h3>
 
-<p>If you have <a href="https://sublime.wbond.net">Package Control</a> installed, simply navigate to:</p>
+<p>The easiest (and recommended) way to install Trimmer is using <a href="https://sublime.wbond.net">Package Control</a>.</p>
 
 <ul>
 <li>
-<strong>Tools</strong>
+<p><code>Tools</code> -&gt; <code>Command Palette...</code> -&gt; <code>Package Control: Install Package</code>  </p>
 
-<ul>
-<li><strong>Command Palette...</strong></li>
-<li>
-<strong>Package Control:</strong> <strong><em>Install Package</em></strong>
-
-<ul>
-<li>type the word <code>Trimmer</code>
-</li>
-</ul>
-</li>
-</ul>
+<p>Type the word <code>Trimmer</code>, and select it to install.</p>
 </li>
 </ul><h3>
 <a name="git" class="anchor" href="#git"><span class="octicon octicon-link"></span></a>Git</h3>
 
 <p>To install Trimmer using Git, change to your Sublime Text <strong><em>Packages</em></strong> directory, and clone the <a href="https://github.com/jonlabelle/Trimmer">Trimmer repository</a>.</p>
 
-<div class="highlight highlight-sh"><pre><span class="c"># on OS X... cd to your Packages directory and clone the Git repository</span>
-<span class="nb">cd</span> ~/Library/Application<span class="se">\ </span>Support/Sublime<span class="se">\ </span>Text<span class="se">\ </span>3/Packages/ <span class="o">&amp;&amp;</span>
+<pre><code># on OS X... cd to your Packages directory and clone the Git repository
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
     git clone https://github.com/jonlabelle/Trimmer
-</pre></div>
+</code></pre>
 
 <h3>
 <a name="manually" class="anchor" href="#manually"><span class="octicon octicon-link"></span></a>Manually</h3>
@@ -88,15 +88,15 @@
 
 <p>Download and extract the <a href="https://github.com/jonlabelle/Trimmer/zipball/master">zip file</a> to your <strong><em>Packages</em></strong> directory. Listed below are the default Sublime Text <strong><em>Packages</em></strong> directories by platform.</p>
 
-<div class="highlight highlight-sh"><pre><span class="c"># OS X</span>
-~/Library/Application Support/Sublime Text <span class="o">[</span>2<span class="p">|</span>3<span class="o">]</span>/Packages
+<pre><code># OS X
+~/Library/Application Support/Sublime Text [2|3]/Packages
 
-<span class="c"># Linux</span>
-~/.Sublime Text <span class="o">[</span>2<span class="p">|</span>3<span class="o">]</span>/Packages
+# Linux
+~/.Sublime Text [2|3]/Packages
 
-<span class="c"># Windows</span>
-%APPDATA%/Sublime Text <span class="o">[</span>2<span class="p">|</span>3<span class="o">]</span>/Packages
-</pre></div>
+# Windows
+%APPDATA%/Sublime Text [2|3]/Packages
+</code></pre>
 
 <blockquote>
 <p><strong>NOTE:</strong> replace the <code>[2|3]</code> part above with the appropriate Sublime Text <em>major</em> version of your install.</p>
@@ -123,16 +123,16 @@
 </ul><h3>
 <a name="commands" class="anchor" href="#commands"><span class="octicon octicon-link"></span></a>Commands</h3>
 
-<p>All commands are accessible from the <strong>Command Palette</strong> and prefixed with <code>Trimmer:</code>.</p>
+<p>All commands are accessible from the <strong><em>Command Palette</em></strong> with prefix <code>Trimmer:</code>.</p>
 
-<h3>
-<a name="trimmer-sublime-text-command-reference" class="anchor" href="#trimmer-sublime-text-command-reference"><span class="octicon octicon-link"></span></a>Trimmer Sublime Text Command Reference</h3>
+<h4>
+<a name="trimmer-sublime-text-command-reference" class="anchor" href="#trimmer-sublime-text-command-reference"><span class="octicon octicon-link"></span></a>Trimmer Sublime Text Command Reference</h4>
 
 <table>
 <thead><tr>
-<th>command</th>
-<th>description</th>
-<th>context</th>
+<th>Command</th>
+<th>Description</th>
+<th>Context</th>
 </tr></thead>
 <tbody>
 <tr>
@@ -163,12 +163,9 @@
 <li><a href="http://jonlabelle.com/">Jon LaBelle</a></li>
 </ul>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/jonlabelle">jonlabelle</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
