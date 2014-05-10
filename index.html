@@ -41,6 +41,7 @@
 <li>Trim whitespace at the start and end of each line.</li>
 <li>Delete empty, whitespace only lines.</li>
 <li>Collapse multiple consecutive empty lines into one empty line.</li>
+<li>Remove empty lines from the beginning and end of the file.</li>
 </ul><p>Watch a <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_demo.gif"><strong>Quick Demo</strong></a></p>
 
 <p><img src="https://raw.github.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_cmd_palette.png" alt="ScreenShot"></p>
@@ -116,7 +117,7 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 </ul><h3>
 <a name="commands" class="anchor" href="#commands"><span class="octicon octicon-link"></span></a>Commands</h3>
 
-<p>All commands are accessible from the <strong><em>Command Palette</em></strong> with prefix <code>Trimmer:</code>.</p>
+<p>All commands are accessible from the <strong><em>Command Palette</em></strong> using prefix <code>Trimmer:</code>, and in the main menu underneath <code>Edit</code> -&gt; <code>Line</code>.</p>
 
 <h4>
 <a name="trimmer-sublime-text-command-reference" class="anchor" href="#trimmer-sublime-text-command-reference"><span class="octicon octicon-link"></span></a>Trimmer Sublime Text Command Reference</h4>
@@ -152,6 +153,11 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <td><code>collapse_empty_lines</code></td>
 <td>collapse multiple consecutive empty lines into one empty line</td>
 <td>selected lines, or entire file</td>
+</tr>
+<tr>
+<td><code>trim_edges</code></td>
+<td>removes empty lines from the beginning and end of the file</td>
+<td>entire file</td>
 </tr>
 </tbody>
 </table><h2>
