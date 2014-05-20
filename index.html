@@ -49,22 +49,21 @@
 <h2>
 <a name="compatibility" class="anchor" href="#compatibility"><span class="octicon octicon-link"></span></a>Compatibility</h2>
 
-<p>Trimmer is compatible with Sublime Text 2 and 3, on all OS platforms (OS X, Windows and Linux).</p>
+<p>Trimmer is compatible with Sublime Text 2 and 3, on <em>all</em> OS platforms (OS X, Windows and Linux).</p>
 
 <h2>
-<a name="installing" class="anchor" href="#installing"><span class="octicon octicon-link"></span></a>Installing</h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
 
 <h3>
 <a name="package-control" class="anchor" href="#package-control"><span class="octicon octicon-link"></span></a>Package Control</h3>
 
-<p>The easiest (and recommended) way to install Trimmer is using <a href="https://sublime.wbond.net">Package Control</a>.</p>
+<p>The easiest, and recommended way to install Trimmer is using <a href="https://sublime.wbond.net">Package Control</a>.</p>
+
+<p>From the main application menu, navigate to:</p>
 
 <ul>
 <li>
-<p><code>Tools</code> -&gt; <code>Command Palette...</code> -&gt; <code>Package Control: Install Package</code>  </p>
-
-<p>Type the word <code>Trimmer</code>, and select it to install.</p>
-</li>
+<code>Tools</code> -&gt; <code>Command Palette...</code> -&gt; <code>Package Control: Install Package</code>, type the word <strong><code>Trimmer</code></strong>, then select it to complete install.</li>
 </ul><h3>
 <a name="git" class="anchor" href="#git"><span class="octicon octicon-link"></span></a>Git</h3>
 
@@ -78,22 +77,25 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <h3>
 <a name="manually" class="anchor" href="#manually"><span class="octicon octicon-link"></span></a>Manually</h3>
 
-<p>You can also manually install Trimmer.</p>
+<p><strong>Download</strong> and <strong>extract</strong> the <a href="https://github.com/jonlabelle/Trimmer/zipball/master">zip file</a> or <a href="https://github.com/jonlabelle/Trimmer/tarball/master">tarball</a> to your Sublime Text <strong><em>Packages</em></strong> directory. Listed below are the <em>default</em> locations for Sublime Text Packages.</p>
 
-<p>Download and extract the <a href="https://github.com/jonlabelle/Trimmer/zipball/master">zip file</a> to your <strong><em>Packages</em></strong> directory. Listed below are the default Sublime Text <strong><em>Packages</em></strong> directories by platform.</p>
+<p><strong>OS X</strong></p>
 
-<pre><code># OS X
-~/Library/Application Support/Sublime Text [2|3]/Packages
+<pre><code>~/Library/Application Support/Sublime Text [2|3]/Packages
+</code></pre>
 
-# Linux
-~/.Sublime Text [2|3]/Packages
+<p><strong>Linux</strong></p>
 
-# Windows
-%APPDATA%/Sublime Text [2|3]/Packages
+<pre><code>~/.Sublime Text [2|3]/Packages
+</code></pre>
+
+<p><strong>Windows</strong></p>
+
+<pre><code>%APPDATA%/Sublime Text [2|3]/Packages
 </code></pre>
 
 <blockquote>
-<p><strong>NOTE:</strong> replace the <code>[2|3]</code> part above with the appropriate Sublime Text <em>major</em> version of your install.</p>
+<p>Don't forget to replace the <code>[2|3]</code> part with the appropriate Sublime Text version for your installation.</p>
 </blockquote>
 
 <h2>
@@ -115,18 +117,19 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <strong>Windows</strong>: <code>Ctrl + Alt + S</code>
 </li>
 </ul><h2>
-<a name="commands" class="anchor" href="#commands"><span class="octicon octicon-link"></span></a>Commands</h2>
+<a name="command-accessibility" class="anchor" href="#command-accessibility"><span class="octicon octicon-link"></span></a>Command Accessibility</h2>
 
-<p>All commands are accessible from the <strong>Command Palette</strong> using prefix <code>Trimmer</code>, and in the <strong>Main Menu</strong> under <code>Edit</code> -&gt; <code>Line</code> -&gt; <em>Trimming Command</em>.</p>
+<p>All commands are accessible from the <strong>Command Palette</strong> using prefix <code>Trimmer</code>, and in the <strong>Main Menu</strong> under <code>Edit</code> -&gt; <code>Line</code> -&gt; <em>Trimmer</em> command.</p>
 
-<h3>
-<a name="command-access-screenshots" class="anchor" href="#command-access-screenshots"><span class="octicon octicon-link"></span></a>Command Access Screenshots</h3>
+<p><strong>Screenshots</strong></p>
 
 <ul>
-<li><a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_cmd_palette.png">from the Command Palette</a></li>
-<li><a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_main_menu.png">from the Main Menu</a></li>
-</ul><h3>
-<a name="trimmer-command-reference" class="anchor" href="#trimmer-command-reference"><span class="octicon octicon-link"></span></a>Trimmer Command Reference</h3>
+<li>from the <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_cmd_palette.png">Command Palette</a>
+</li>
+<li>from the <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_main_menu.png">Main Menu</a>
+</li>
+</ul><h2>
+<a name="trimmer-command-api" class="anchor" href="#trimmer-command-api"><span class="octicon octicon-link"></span></a>Trimmer Command API</h2>
 
 <table>
 <thead><tr>
@@ -168,11 +171,19 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 </tbody>
 </table><h2>
 <a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
-<ul>
-<li><a href="http://jonlabelle.com/">Jon LaBelle</a></li>
-</ul>
-</section>
-</div>
-<!--[if !IE]><script>fixScale(document);</script><![endif]-->
-</body>
+
+<p><a href="http://jonlabelle.com">Jon LaBelle</a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Trimmer is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
 </html>
