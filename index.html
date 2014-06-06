@@ -42,6 +42,7 @@
 <li>Delete empty, whitespace only lines.</li>
 <li>Collapse multiple consecutive empty lines into one empty line.</li>
 <li>Trim empty, whitespace only lines at the beginning and end of the file.</li>
+<li>Remove blank space characters.</li>
 </ul><p>Watch a <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_demo.gif"><strong>Quick Demo</strong></a></p>
 
 <p><img src="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_ss_cmd_palette.png" alt="ScreenShot"></p>
@@ -146,27 +147,32 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <tr>
 <td><code>trim_leading_whitespace</code></td>
 <td>trim whitespace at the start of each line</td>
-<td>selected lines, or entire file</td>
+<td>selection, or entire file</td>
 </tr>
 <tr>
 <td><code>trim_leading_trailing_whitespace</code></td>
 <td>trim whitespace at the start and end of each line</td>
-<td>selected lines, or entire file</td>
+<td>selection, or entire file</td>
 </tr>
 <tr>
 <td><code>delete_empty_lines</code></td>
 <td>delete empty, whitespace only lines</td>
-<td>selected lines, or entire file</td>
+<td>selection, or entire file</td>
 </tr>
 <tr>
 <td><code>collapse_empty_lines</code></td>
 <td>collapse multiple consecutive empty lines into one empty line</td>
-<td>selected lines, or entire file</td>
+<td>selection, or entire file</td>
 </tr>
 <tr>
 <td><code>trim_edges</code></td>
 <td>trim empty, whitespace only lines at the beginning and end of the file</td>
 <td>entire file</td>
+</tr>
+<tr>
+<td><code>remove_blank_spaces</code></td>
+<td>remove all blank space characters (tab, cr, ff, vt, space)</td>
+<td>selection, or entire file</td>
 </tr>
 </tbody>
 </table><h2>
@@ -184,6 +190,6 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-	<script src="javascripts/main.js"></script>
+		
   </body>
 </html>
