@@ -51,6 +51,7 @@
 <li>Trim whitespace at the start and end of each line.</li>
 <li>Delete empty, whitespace only lines.</li>
 <li>Collapse multiple consecutive empty lines into one empty line.</li>
+<li>Collapse multiple consecutive spaces into one space.</li>
 <li>Trim empty, whitespace only lines at the beginning and end of the file.</li>
 <li>Remove blank space characters.</li>
 </ul>
@@ -67,7 +68,7 @@
 <strong>Smart double quotes:</strong> <code>“”</code> <em>to</em> <code>""</code>
 </li>
 <li>
-<strong>Ellipses:</strong> <code>…</code> <em>to</em> <code>...</code>
+<strong>Ellipsis:</strong> <code>…</code> <em>to</em> <code>...</code>
 </li>
 <li>
 <strong>Em dash:</strong> <code>—</code> <em>to</em> <code>---</code>
@@ -205,8 +206,13 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <td>selection, or entire file</td>
 </tr>
 <tr>
-<td><code>collapse_empty_lines</code></td>
+<td><code>collapse_lines</code></td>
 <td>collapse multiple consecutive empty lines into one empty line</td>
+<td>selection, or entire file</td>
+</tr>
+<tr>
+<td><code>collapse_spaces</code></td>
+<td>collapse multiple consecutive spaces into one space</td>
 <td>selection, or entire file</td>
 </tr>
 <tr>
@@ -218,6 +224,11 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/ &amp;&amp;
 <td><code>remove_blank_spaces</code></td>
 <td>remove all blank space characters (tab, cr, ff, vt, space)</td>
 <td>selection, or entire file</td>
+</tr>
+<tr>
+<td><code>replace_smart_characters</code></td>
+<td>replace smart characters (smart quotes, em/en dash, ellipsis, etc.)</td>
+<td>entire file</td>
 </tr>
 </tbody>
 </table>
