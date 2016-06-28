@@ -20,12 +20,12 @@
 
     <section class="main-content">
       <h1>
-<a id="trimmer" class="anchor" href="#trimmer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trimmer</h1>
+<a id="trimmer" class="anchor" href="#trimmer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trimmer</h1>
 
 <p><a href="http://jonlabelle.github.io/Trimmer">Trimmer</a> is a <a href="http://www.sublimetext.com">Sublime Text</a> plug-in for cleaning up whitespace.</p>
 
 <h2>
-<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
 <li>Trim whitespace at the end of each line.</li>
@@ -37,10 +37,11 @@
 <li>Trim empty, whitespace only lines at the beginning and end of the file.</li>
 <li>Remove blank space characters.</li>
 <li>Normalize spaces (consecutive spaces reduced, empty lines removed and lines trimmed).</li>
+<li>Tokenize a string by collapsing consecutive spaces, and trimming leading and trailing spaces.</li>
 </ul>
 
 <h3>
-<a id="additional-features" class="anchor" href="#additional-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Features</h3>
+<a id="additional-features" class="anchor" href="#additional-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional Features</h3>
 
 <p>A <strong>Replace Smart Characters</strong> command that performs the following actions:</p>
 
@@ -89,13 +90,13 @@
 <p>Watch a <a href="https://raw.githubusercontent.com/jonlabelle/Trimmer/gh-pages/images/trimmer_demo.gif"><strong>Quick Demo</strong></a></p>
 
 <h2>
-<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <p>Trimmer is compatible with <strong>Sublime Text 2</strong> and <strong>3</strong>, on all supported Operating
 Systems (<em>OS X</em>, <em>Windows</em> and <em>Linux</em>).</p>
 
 <h3>
-<a id="package-control" class="anchor" href="#package-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Package Control</h3>
+<a id="package-control" class="anchor" href="#package-control" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Package Control</h3>
 
 <p>The easiest, and recommended way to install Trimmer is using <a href="https://packagecontrol.io">Package Control</a>.</p>
 
@@ -108,7 +109,7 @@ the word <strong><code>Trimmer</code></strong>, then select it to complete insta
 </ul>
 
 <h3>
-<a id="git" class="anchor" href="#git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git</h3>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git</h3>
 
 <p>To install Trimmer using Git, change to your Sublime Text <strong><em>Packages</em></strong>
 directory, and clone the <a href="https://github.com/jonlabelle/Trimmer">Trimmer repository</a>.</p>
@@ -121,7 +122,7 @@ $ git clone https://github.com/jonlabelle/Trimmer
 </code></pre>
 
 <h3>
-<a id="manually" class="anchor" href="#manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manually</h3>
+<a id="manually" class="anchor" href="#manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Manually</h3>
 
 <p><strong>Download</strong> and <strong>extract</strong> the <a href="https://github.com/jonlabelle/Trimmer/zipball/master">zip</a>
 or <a href="https://github.com/jonlabelle/Trimmer/tarball/master">tarball</a> to your
@@ -150,7 +151,7 @@ version for your installation.</p>
 </blockquote>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>All commands are accessible from the <strong>Command Palette</strong> using prefix
 <code>Trimmer</code>, and in the <strong>Main Menu</strong> under <code>Edit</code> -&gt; <code>Line</code> -&gt; <em>Trimmer</em> command.</p>
@@ -161,7 +162,7 @@ version for your installation.</p>
 </ul>
 
 <h3>
-<a id="key-bindings" class="anchor" href="#key-bindings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Bindings</h3>
+<a id="key-bindings" class="anchor" href="#key-bindings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Key Bindings</h3>
 
 <p>The <em>default</em> key binding will trim trailing whitespace at the end of each of
 line (entire file).</p>
@@ -179,7 +180,7 @@ line (entire file).</p>
 </ul>
 
 <h3>
-<a id="trimmer-command-api" class="anchor" href="#trimmer-command-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trimmer Command API</h3>
+<a id="trimmer-command-api" class="anchor" href="#trimmer-command-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trimmer Command API</h3>
 
 <table>
 <thead>
@@ -240,20 +241,30 @@ line (entire file).</p>
 <td>replace smart characters (smart quotes, em/en dash, ellipsis, nbsp)</td>
 <td>selection, or entire file</td>
 </tr>
+<tr>
+<td><code>tokenize_string</code></td>
+<td>convert a string to a token by collapsing consecutive spaces, and trimming leading and trailing spaces</td>
+<td>selection, or entire file</td>
+</tr>
 </tbody>
 </table>
 
 <h2>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author</h2>
 
 <p><a href="http://jonlabelle.com">Jon LaBelle</a></p>
 
 <h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>Trimmer is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
 
-      <footer class="site-footer"></footer>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/jonlabelle/Trimmer">Trimmer</a> is maintained by <a href="https://github.com/jonlabelle">jonlabelle</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
     </section>
 
   
